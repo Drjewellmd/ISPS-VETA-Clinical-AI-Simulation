@@ -80,9 +80,12 @@ The design philosophy follows a **Do No Harm** principle and aligns with governa
 
 This repository includes a preliminary multi-class machine learning simulation that predicts triage actions from structured scenario data.
 The model is evaluated not only for overall performance, but for **safety-relevant behavior**, especially the need to avoid missing high-risk cases.
-![ISPS-VETA ML Pilot Results](images/isps_veta_ml_results.png)
 
-**ISPS-VETA ML Pilot Results.** Preliminary comparison of machine learning models for simulated clinical triage decisions. Evaluation emphasizes safety-relevant behavior, particularly recall for escalation to a human clinician.
+### Model Evaluation Results
+![ISPS-VETA ML Pilot Results](images/isps_veta_ml_results.jpeg)
+The Decision Tree model demonstrated higher recall for escalation scenarios, supporting its suitability for safety-critical decision support where minimizing missed high-risk cases is essential.
+
+**ISPS-VETA ML Pilot Results.** Preliminary comparison of machine learning models for simulated clinical triage decisions. Evaluation emphasizes safety-relevant behavior, particularly recall for escalation to a human clinician. This pilot demonstrates how structured behavioral features can be translated into bounded decision-support outputs within a governance-constrained AI system.
 
 ### Safety Principle
 In this system, it is more acceptable to over-monitor than to fail to escalate a serious concern.
