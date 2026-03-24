@@ -141,8 +141,51 @@ Because ISPS-VETA is designed for safety-critical behavioral health support, eva
 ### SHAP Interpretability
 Stage 2 also incorporates **SHAP (Shapley Additive exPlanations)** to identify which behavioral and cognitive features most influenced triage outcomes. This improves model transparency and supports clinician review of escalation decisions within a governance-constrained, human-in-the-loop framework.
 
-## Project Lead
+## Stage 2 Results: Interpretable Clinical Triage
 
+The ISPS-VETA Stage 2 model demonstrates structured behavioral health triage across four bounded outcomes:
+
+- ROUTINE_SUPPORT  
+- MONITOR_CLOSELY  
+- ACTIVATE_INTERVENTION  
+- ESCALATE_TO_HUMAN_CLINICIAN  
+
+### Scenario Validation
+
+Example outputs from simulation:
+
+- High-risk scenario → ESCALATE_TO_HUMAN_CLINICIAN  
+- Moderate-risk scenario → ACTIVATE_INTERVENTION  
+- Low-risk scenario → ROUTINE_SUPPORT  
+- Intermediate scenario → MONITOR_CLOSELY  
+
+This demonstrates appropriate risk stratification and escalation behavior in safety-critical contexts.
+
+### Safety Objective
+
+The system prioritizes:
+- Minimizing false negatives in escalation scenarios  
+- Maintaining bounded and interpretable outputs  
+- Supporting human clinician oversight  
+
+### SHAP Interpretability
+
+We integrated SHAP (Shapley Additive exPlanations) to identify which behavioral features most influenced each triage decision.
+
+This enables:
+- Transparent model reasoning  
+- Clinician review of escalation decisions  
+- Alignment with governance-constrained AI systems  
+
+### Outputs Generated
+
+- SHAP Summary Plot (global feature importance)  
+- SHAP Local Explanation (scenario-level reasoning)  
+- Model comparison (Decision Tree vs Random Forest)
+
+Validated in MMAARS virtual analog astronaut cohorts (N≈45), with in-person mission validation scheduled for 2026.
+
+## Project Lead
 **Dr. Susan Jewell, MD**  
 Physician-scientist, AI safety researcher, analog astronautics leader  
 GitHub: https://github.com/Drjewellmd  
