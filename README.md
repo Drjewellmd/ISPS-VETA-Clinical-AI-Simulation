@@ -77,13 +77,14 @@ Future long-duration missions and remote austere environments may require system
 The design philosophy follows a **Do No Harm** principle and aligns with governance-constrained, human-in-the-loop AI safety.
 
 ## Machine Learning Pilot
-
 This repository includes a preliminary multi-class machine learning simulation that predicts triage actions from structured scenario data.
 The model is evaluated not only for overall performance, but for **safety-relevant behavior**, especially the need to avoid missing high-risk cases.
+This pilot demonstrates how structured behavioral and cognitive features can be translated into bounded decision-support outputs within a governance-constrained AI system.
 
 ### Model Evaluation Results
 ![ISPS-VETA ML Pilot Results](images/isps_veta_ml_results.jpeg)
-The Decision Tree model demonstrated higher recall for escalation scenarios, supporting its suitability for safety-critical decision support where minimizing missed high-risk cases is essential.
+The Decision Tree model demonstrated stronger recall for escalation scenarios, indicating improved sensitivity to high-risk conditions. This aligns with safety-critical design goals, where minimizing missed escalation cases (false negatives) is prioritized over strict accuracy.
+The system is explicitly designed to prioritize minimizing false negatives in high-risk escalation scenarios, reflecting safety-critical evaluation principles.
 
 **ISPS-VETA ML Pilot Results.** Preliminary comparison of machine learning models for simulated clinical triage decisions. Evaluation emphasizes safety-relevant behavior, particularly recall for escalation to a human clinician. This pilot demonstrates how structured behavioral features can be translated into bounded decision-support outputs within a governance-constrained AI system.
 
@@ -128,6 +129,7 @@ Physician-scientist, AI safety researcher, analog astronautics leader
 GitHub: https://github.com/Drjewellmd  
 
 ## Related Project
-
+Relationship to MAGSBHO
+This model extends the governance-constrained AI approach developed in MAGSBHO into the clinical behavioral health domain.
 **MAGSBHO AI Safety Prototype**  
 Governance-constrained multi-agent AI system for behavioral health and operations in high-risk environments.
